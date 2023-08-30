@@ -1,0 +1,16 @@
+[package]
+name = "bevy-ios-touch-fix"
+version = "0.0.1"
+edition = "2021"
+authors = ["Elase Huang <elase.huang@outlook.com>"]
+description = "Bevy Plugin for fixing ios touch event position"
+
+[dependencies]
+bevy_ecs = "0.10.1"
+bevy_math = "0.10.1"
+bevy_app = "0.10.1"
+bevy_input = "0.10.1"
+bevy_window = "0.10.1"
+
+[target.'cfg(target_os = "ios")'.dependencies]
+objc2 = "0.4.1"
